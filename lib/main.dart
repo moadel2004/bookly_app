@@ -21,7 +21,9 @@ class BooklyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return GetMaterialApp(
-          theme: ThemeData().copyWith(scaffoldBackgroundColor: kPrimaryColor),
+          theme: ThemeData.dark().copyWith(
+            scaffoldBackgroundColor: kPrimaryColor,
+          ),
           debugShowCheckedModeBanner: false,
           home: const SplashView(), // يفضل إضافة const هنا لتحسين الأداء
         );
